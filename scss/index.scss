@@ -1,0 +1,56 @@
+body {
+    //background-color: #CC7533; #AE7431
+    background-color: #DE7312;
+    color: white;
+    overflow-x: hidden !important;
+}
+
+.sekcija{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 10%;
+    width: 100vw;
+    height: 80vh;
+    margin-bottom: 25px;
+    
+}
+
+.kredit{
+    background-image: url("/animations/raketa.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+}
+
+.video-container {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    @media(max-width: 650px) {
+      height: 50vh;
+      width:  100vw;
+    }
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+video {
+    object-fit: cover; // Set the magic    
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    top: 0;
+    left: 0;
+}
