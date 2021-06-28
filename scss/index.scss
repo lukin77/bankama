@@ -1,6 +1,6 @@
 body {
-    //background-color: #CC7533; #AE7431DE7312
-    background-color: #AE7431;
+    //background-color: #CC7533; #AE7431
+    background-color: #151b29;
     color: white;
     overflow-x: hidden !important;
 }
@@ -14,7 +14,7 @@ body {
     margin-bottom: 1.5em;
 }
 
-.p{
+p{
     padding-top: 1em;
     justify-content: center;
 }
@@ -46,13 +46,17 @@ h2{
 }
 
 .video-container {
-    height: 90vh;
+    height: 85vh;
     width: 100vw;
     position: relative;
     overflow: hidden;
     @media(max-width: 950px) {
       height: 50vh;
-      width:  100vw;
+      
+    }
+    @media(max-width: 600px) {
+        height: 25vh;
+      
     }
     max-height: 100%;
     max-width: 100%;
