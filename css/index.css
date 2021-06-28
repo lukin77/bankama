@@ -1,5 +1,5 @@
 body {
-  background-color: #DE7312;
+  background-color: #AE7431;
   color: white;
   overflow-x: hidden !important;
 }
@@ -16,10 +16,29 @@ body {
 }
 
 .kredit {
-  background-image: url("/animations/raketa.gif");
+  background-image: url("/assets/Rocket_1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.kartica {
+  background-image: url("/assets/Cards_transparent222.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.safe {
+  background-image: url("/assets/Safe_transparent.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.internet {
+  background-image: url("/assets/mobitel.png");
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .container-fluid {
