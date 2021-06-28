@@ -16,11 +16,12 @@ body {
     margin-bottom: 1.5em;
 }
 
-.text-usluge {
+.p{
     padding-top: 1em;
+    justify-content: center;
 }
 
-button {
+.kontakt {
     background: none;
     color: #ffa260;
     border: 2px solid;
@@ -29,7 +30,7 @@ button {
     transition: color 0.25s, border-color 0.25s, box-shadow 0.25s transform 0.25s;
 }
 
-button:hover {
+.kontakt:hover {
     border-color: #f1ff5c;
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
@@ -37,44 +38,145 @@ button:hover {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+#back-to-top-btn
+{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  background-color: #333;
+  color: #CC7533;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition: ease-in-out all .5s;
+}
+
+#back-to-top-btn:hover
+{
+  background-color: #CC7533;
+  color: #333;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        padding-top: 1em;
+    }
+
     h2 {
-        padding-top: 0.7em;
+        padding-top: 0.9em;
+        font-size: 2em;
     }
 
     button {
         margin-top: 1.5em;
         margin-bottom: 0.2em;
     }
+
+    .gap {
+        padding: 0.8em;
+    }
+
+    p {
+        padding-top: 1.2em;
+    }
+
+    .kontakt {
+        font-size: .8em;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 990px) {
-    .row {
-        font-size: 0.8em;
+@media only screen and (min-width: 600px) {
+
+    h1 {
+        padding-top: 1em;
     }
+
     h2 {
-        padding-top: 1.6em;
+        padding-top: 0.9em;
+        font-size: 2em;
     }
-    img {
-        padding-top: 9em;
+
+    .kontakt {
+        margin-top: 1.5em;
+        margin-bottom: 0.2em;
+    }
+    .gap {
+        padding: 0.8em;
+    }
+
+    p {
+        padding-top: 1.3em;
     }
 }
 
-@media (min-width: 990px) and (max-width: 1200px)
-{
-    img {
-        padding-top: 5em;
+@media (min-width: 768px) and (max-width: 992px) {
+    h1 {
+        padding-top: 0.8em;
     }
 
+    h2 {
+        font-size: 2.3em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    img {
+        padding-top: 110px;
+    }
+
+    .row {
+        width: 800px;
+        margin: 0 -50px;
+    }
 }
 
-@media (min-width: 1200px)
-{
-    img {
-        padding-top: 3em;
+@media only screen and (min-width: 992px) {
+    
+    h1 {
+        padding-top: 0.5em;
     }
 
-    .text {
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+
+    img {
+        padding-top: 110px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    h1 {
+        padding-top: 0.8em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
         padding-top: 2.7em;
+    }
+
+    img {
+        padding-top: 140px;
+    }
+
+    .container {
+        width: 100%;
     }
 }

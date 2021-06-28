@@ -5,46 +5,37 @@ body {
     overflow-x: hidden !important;
 }
 
+.gap {
+    padding: 1.4em;
+}
+
+.breaks{
+    margin-top: 4em;
+    margin-bottom: 1.5em;
+}
+
+.p{
+    padding-top: 1em;
+    justify-content: center;
+}
+
+.flexara{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .sekcija{
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     padding-right: 10%;
     width: 100vw;
     height: 80vh;
-    margin-bottom: 25px;
-    
+    margin-bottom: 25px;  
 }
 
-.kredit{
-    background-image: url("/assets/Rocket_1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.kartica{
-    background-image: url("/assets/Cards_transparent222.png");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-}
-
-.safe{
-    background-image: url("/assets/Safe_transparent.png");
-    background-position: left;
-    background-repeat: no-repeat;
-    
-}
-
-.internet{
-    background-image: url("/assets/mobitel.png");
-    background-position: left;
-    background-repeat: no-repeat;
-    
-}
 
 .container-fluid{
     padding: 0;
@@ -59,7 +50,7 @@ h2{
     width: 100vw;
     position: relative;
     overflow: hidden;
-    @media(max-width: 650px) {
+    @media(max-width: 950px) {
       height: 50vh;
       width:  100vw;
     }
@@ -75,4 +66,21 @@ video {
     width: 100%; 
     top: 0;
     left: 0;
+}
+
+.kontakt {
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s transform 0.25s;
+}
+
+.kontakt:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.5em);
+    cursor: pointer;
 }
